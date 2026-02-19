@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>واجهة المستخدم - نظام الأرقام</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <div class="welcome-message">
+    <h3 id="welcomeUser">أهلاً يا mohammed</h3>
+  </div>
+
+  <div class="form-group">
+    <label for="prefixSelect">اختر الشبكة:</label>
+    <select id="prefixSelect">
+      <option value="079" selected>زين 079</option>
+      <!-- <option value="078">أمنية 078</option>
+      <option value="077">أورانج 077</option> -->
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="genderSelect">الجنس (اختياري):</label>
+    <select id="genderSelect">
+      <option value="">غير محدد</option>
+      <option value="male">ذكر</option>
+      <option value="female">أنثى</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="ageGroupSelect">الفئة العمرية (اختياري):</label>
+    <select id="ageGroupSelect">
+      <option value="">غير محدد</option>
+      <option value="18-24">18 - 24</option>
+      <option value="25-34">25 - 34</option>
+      <option value="35-44">35 - 44</option>
+      <option value="45-54">45 - 54</option>
+      <option value="55+">55 فما فوق</option>
+    </select>
+  </div>
+
+  <div class="form-group">
+    <label for="statusSelect">الحالة الاجتماعية (اختياري):</label>
+    <select id="statusSelect">
+      <option value="">غير محدد</option>
+      <option value="single">أعزب</option>
+      <option value="married">متزوج</option>
+      <option value="divorced">مطلق</option>
+      <option value="widow">أرمل</option>
+    </select>
+  </div>
+  <div class="form-group">
+  <label for="callStatusSelect">حالة الاتصال:</label>
+  <select id="callStatusSelect">
+    <option value="">غير محدد</option>
+    <option value="answered">متصل</option>
+    <option value="no_answer">لا يجيب</option>
+    <option value="busy">مشغول</option>
+    <option value="closed">مغلق</option>
+    <option value="wrong_number">رقم خاطئ</option>
+    <option value="out_of_coverage">خارج التغطية</option>
+  </select>
+</div>
+
+  <div class="action-buttons">
+    <!-- زر توليد الرقم -->
+    <button id="generateBtn" class="primary-btn">توليد رقم</button>
+    
+    <!-- عرض الرقم الذي تم توليده -->
+    <div id="generatedNumber" class="generated-box hidden"></div>
+    
+    <!-- زر للاتصال -->
+    <button id="callBtn" class="primary-btn">اتصال</button>
+
+    <!-- زر الحفظ -->
+    <button id="saveBtn" class="secondary-btn">حفظ البيانات</button>
+  </div>
+
+  <button class="logout-btn" id="backToLogin">تسجيل خروج</button>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-database-compat.js"></script>
+
+<script src="firebase.js"></script>
+<script src="user.js"></script>
+
+</body>
+</html>

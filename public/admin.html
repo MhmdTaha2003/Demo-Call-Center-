@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>لوحة تحكم الأدمن</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="container">
+  <h2>لوحة تحكم الأدمن</h2>
+  
+  <!-- زر تحميل Excel -->
+  <button class="primary-btn" id="downloadExcel">تحميل ملف Excel</button>
+
+  <hr />
+
+  <!-- عدد الأرقام -->
+  <h3>عدد الأرقام لكل مستخدم:</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>المستخدم</th>
+        <th>العدد</th>
+      </tr>
+    </thead>
+    <tbody id="statsTable"></tbody>
+  </table>
+
+  <hr />
+
+  <!-- إدارة المستخدمين -->
+  <h3>إدارة المستخدمين:</h3>
+
+  <div class="form-group">
+    <input id="newUserInput" placeholder="اسم المستخدم الجديد" />
+  </div>
+  
+  <button class="primary-btn" id="addUserBtn">إضافة مستخدم</button>
+
+  <table>
+    <thead>
+      <tr>
+        <th>اسم المستخدم</th>
+        <th>إجراء</th>
+      </tr>
+    </thead>
+    <tbody id="usersTable"></tbody>
+  </table>
+
+  <button class="logout-btn" id="adminLogout">تسجيل خروج</button>
+</div>
+
+<!-- Firebase -->
+<script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-database-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-storage-compat.js"></script>
+
+<!-- ExcelJS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/exceljs/4.3.0/exceljs.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/xlsx/0.18.5/xlsx.full.min.js"></script>
+
+<script src="firebase.js"></script>
+<script src="admin.js"></script>
+
+</body>
+</html>

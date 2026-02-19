@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>تسجيل الدخول</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+  <h2>تسجيل الدخول</h2>
+
+  <div class="form-group">
+    <label for="loginUsername">اسم المستخدم:</label>
+    <!-- <input type="text" id="loginUsername" placeholder="أدخل اسم المستخدم"> -->
+    <input type="password" autocomplete="off" id="loginUsername" autocorrect="off" placeholder="أدخل اسم المستخدم" spellcheck="false" autofocus>
+
+  </div>
+
+  <div class="action-buttons">
+    <button id="loginBtn" class="primary-btn">دخول</button>
+  </div>
+
+  <p class="error-message hidden" id="loginError"></p>
+</div>
+
+<script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-app-compat.js"></script>
+<script src="https://www.gstatic.com/firebasejs/9.6.11/firebase-database-compat.js"></script>
+
+<script src="firebase.js"></script>
+<script src="login.js"></script>
+
+</body>
+</html>
