@@ -9,6 +9,6 @@ Features
  - Admin dashboard (add/delete users & track activity)
  - Built as a demo project to simulate real call center operations
 
-## to log in as a admin, use admin123 
-## to log in as a user, use mohammed
-@ https://callcentersystem-44497.web.app/
+# to log in as a admin, use admin123 
+# to log in as a user, use mohammed
+# https://callcentersystem-44497.web.app/
